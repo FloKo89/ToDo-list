@@ -80,7 +80,7 @@ delete_selected_task_button.grid(column=0, row=1, columnspan=2, sticky="ew")
 application_menu = tk.Menu(root)
 root.configure(menu=application_menu)
 
-file_menu = tk.Menu(application_menu)
+file_menu = tk.Menu(application_menu, tearoff=0)
 file_menu.add_command(label="Datei speichern", command=save_file)
 file_menu.add_command(label="Datei öffnen", command=open_file)
 
